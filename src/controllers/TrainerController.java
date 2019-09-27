@@ -29,7 +29,7 @@ public class TrainerController {
     public String show(ModelMap m) {
         TrainercharEntity trainer = new TrainercharEntity();
         m.addAttribute("emTrainer", trainer);
-        return "forminser";
+        return "forminsert";
     }
 
     @PostMapping("insertTrainer")

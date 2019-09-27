@@ -28,7 +28,7 @@
             <td><spring:input path="trainerLastname"/></td>
         </tr>
         <tr>
-            <td><spring:label path="trainerSubject">Last Name</spring:label></td>
+            <td><spring:label path="trainerSubject">Subject</spring:label></td>
             <td><spring:input path="trainerSubject"/></td>
         </tr>
     </table>
