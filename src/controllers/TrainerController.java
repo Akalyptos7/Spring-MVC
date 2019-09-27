@@ -29,11 +29,11 @@ public class TrainerController {
     public String show(ModelMap m) {
         TrainercharEntity trainer = new TrainercharEntity();
         m.addAttribute("emTrainer", trainer);
-        return "form";
+        return "forminser";
     }
 
     @PostMapping("insertTrainer")
-    public String insert(ModelMap m, @ModelAttribute(value = "emTrainer") TrainercharEntity train) {
+    public String insert(@ModelAttribute(value = "emTrainer") TrainercharEntity train) {
         trdao.insertTrainer(train);
         return "redirect:/getalltrainers";
     }
@@ -43,7 +43,7 @@ public class TrainerController {
         List<TrainercharEntity> tre = new ArrayList<>();
         tre = trdao.showAllTrainers();
         map.addAttribute("Trainers", tre);
-        return "form2";
+        return "formtable";
     }
 
     @GetMapping("update/{id}")
