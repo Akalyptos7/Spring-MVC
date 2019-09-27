@@ -30,9 +30,9 @@ public class TrainerDAO {
     }
 
     @Transactional
-    public void updateTrainer(TrainercharEntity trainercharEntity) {
+    public void updateTrainer(TrainercharEntity trEnt) {
 
-        em.merge(trainercharEntity);
+        em.merge(trEnt);
     }
 
     @Transactional
